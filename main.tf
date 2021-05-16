@@ -7,7 +7,7 @@ module "openstack" {
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
   config_version = "11.0"
 
-  cluster_name = "phoenix"
+  cluster_name = "tfcloud"
   domain       = "calculquebec.cloud"
   image        = "CentOS-7-x64-2020-03"
 
