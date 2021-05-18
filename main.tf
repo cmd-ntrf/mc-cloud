@@ -7,11 +7,11 @@ variable "node_count" {
 }
 
 module "openstack" {
-  source         = "./openstack"
+  source         = "git::https://github.com/ComputeCanada/magic_castle.git//openstack"
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
-  config_version = "11.0"
+  config_version = "main"
 
-  cluster_name = "tfcloud"
+  cluster_name = "tfc"
   domain       = "calculquebec.cloud"
   image        = "CentOS-7-x64-2020-03"
 
